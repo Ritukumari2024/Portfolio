@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container1 container">
+            <nav>
+                <div class="logo">Ritu Kumari</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p><span><i class="fa-solid fa-code"></i></span> Web developer</p>
+                <h2>Hi, My name is Ritu Kumari <br>
+                    and I am a passionate <br>
+                    <span id="element"></span>
+                </h2>
+                <img class="pic" src="/Portfolio/photo.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!------------about--------------->
+
+    <div id="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="about-pic" src="/My-Portfolio/MyPic.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I’m a passionate and curious tech professional with 2 years of experience at Bank of America on
+                        the contract basis of Microland as a Technology Engineer, where I provided remote technical
+                        support and helped optimize system operations for end-users.
+                        Alongside my IT experience, I’ve developed a strong interest in web development—building
+                        interactive and responsive web applications using HTML, CSS, JavaScript, and working with REST
+                        APIs. My projects include a Tic-Tac-Toe game, Rock-Paper-Scissors game, a real-time Currency
+                        Converter, and a major group project in college (Smart Order Stream), where I led the frontend
+                        design and UI/UX efforts.
+                        I enjoy transforming complex ideas into simple, clean, and user-friendly digital experiences.
+                        I’m actively exploring frontend development roles where I can grow, collaborate with creative
+                        teams, and continue learning modern frameworks like React.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <!------------Skills--------------->
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Techical Skills</span><br>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>DOM Manipulation</li>
+                            <li>REST APIs</li>
+                            <li>OOPs concepts</li>
+                            <li>Resolving software and
+                                application issues</li>
+                            </li>
+                            <li><span>Soft Skills</span><br>
+                            <li>Problem-solving</li>
+                            <li>Time management</li>
+                            <li>Teamwork</li>
+                            <li>Adaptability</li>
+                            <li>Self-Motivated</li>
+                            <li>Disciplined</li>
+                        </ul>
+                    </div>
+                    <!------------Experience--------------->
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>June 2022– July 2024</span><br>
+                            <li>Recently served as a Technology Service Desk
+                                Engineer for Bank of America on the contract basis
+                                with Microland Company</li>
+                            <li>Provided remote technical support to end-users, eﬃciently
+                                resolving system and application issues across platforms.</li>
+                            </li>
+                            <li>Proactively troubleshooted user queries, minimizing down me
+                                and ensuring smooth operations.</li>
+                            <li>
+                                Monitored communication channels to deliver timely and high-
+                                quality customer service.
+                            </li>
+                            <li>Created and maintained detailed documentation of support
+                                tickets for improved tracking and eﬃciency.</li>
+                            <li>Applied technical expertise to resolve complex issues,
+                                contributed to increased user satisfaction.</li>
+                        </ul>
+                    </div>
+                    <!------------Education--------------->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021 – 2025 (Result Awaiting)</span><br>Bachelor of Technology –Computer Science
+                                Engineering <br>Lingaya’s Vidyapeeth Faridabad,
+                                Haryana 121002</li>
+                            <li><span>2019 – 2022 (Scored 88.4%)</span><br>Diploma in Electronics and
+                                Communication Engineering <br>Pusa Institute of Technology,
+                                New Delhi</li>
+                            <li><span>2018 – 2019 (Scored 88%)</span><br>10th <br>S.K.V.C-1, New Delhi
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I’m a Frontend Web Developer skilled in creating responsive, user-friendly websites using HTML,
+                        CSS, and JavaScript.</p>
+                    <a href="#" onclick="data()">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css"></i>
+                    <h2>Responsive Design</h2>
+                    <p>I focus on clean code, mobile-first design, and smooth UI/UX by converting design mockups into
+                        functional web pages..</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Technology Engineer</h2>
+                    <p>Experienced Service Desk Technology Engineer skilled in providing technical support, managing IT
+                        incidents, and resolving hardware, software, and network issues.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Projects--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <!------------Project 1(Tic-tac-toe)--------------->
+                <div class="work">
+                    <img src="XO.png">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>Created an interactive browser game with win-detection logic and dynamic UI updates. Focused
+                            on DOM
+                            manipulation and responsive design.</p>
+                        <a href="/XO.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!------------Project 2 (Amazon)--------------->
+                <div class="work">
+                    <img src="Amazon.webp">
+                    <div class="layer">
+                        <h3> Amazon Clone</h3>
+                        <p>Static clone of the Amazon homepage using only HTML and CSS to replicate the look and feel of
+                            the original website.</p>
+                        <a href="/Amazon_clone/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!------------Project 3 (Rock-paper)--------------->
+                <div class="work">
+                    <img src="RPS.jpg">
+                    <div class="layer">
+                        <h3>Rock-Paper-Scissors</h3>
+                        <p>Fun browser game with user interaction, randomized outcomes, and animated effects. Helped
+                            practice
+                            event listeners and conditional logic.
+                        </p>
+                        <a href="/SPSGame.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!------------Project 4------------
+                <div class="work">
+                    <img src="RPS.jpg">
+                    <div class="layer">
+                        <h3>Rock-Paper-Scissors</h3>
+                        <p>Fun browser game with user interaction, randomized outcomes, and animated effects. Helped
+                            practice
+                            event listeners and conditional logic.
+                        </p>
+                        <a href="/SPSGame.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> --->
+            </div>
+            <a href="My_work.html" class="btn">See more</a>
+        </div>
+    </div> 
+    <!------------Contact--------------->
+    <div id="contact">
+        <div class="container-contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>missritukumari0@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7048945169</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Ritu Kumari_Resume.pdf" Download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Made by Ritu with <i class="fa-solid fa-code"></i> & <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <!------------JavaScript code--------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Web Developer', 'Technology Engineer'],
+            typeSpeed: 50,
+        });
+        // About section
+        let tablinks = document.getElementsByClassName("tab-links")
+        let tabcontents = document.getElementsByClassName("tab-contents")
+
+        // Function to hide and display the skills, Education and experience tabs
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+     
+     
+</body>
+
+</html>
