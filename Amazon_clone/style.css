@@ -161,7 +161,14 @@ i{
     background-color: white;
     padding: 20px 0px 15px;
     margin-bottom: 1rem;
+    transition: transform 0.5s;
  }
+ .box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color:#e1aaff;
+ }
+ 
  .box-img{
     height: 300px;
     background-size: cover;
