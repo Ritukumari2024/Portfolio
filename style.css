@@ -527,7 +527,8 @@ nav .fa-solid {
 
     }
 
-
+   .pic{
+       display: none;
 }
 
 #msg {
