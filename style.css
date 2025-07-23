@@ -360,7 +360,15 @@ span {
 .btn.btn2 {
     display: inline-block;
     background-color: #ff004f;
+    transition: transform 0.3s ease;
+
 }
+/*---------Hover effect-------*/
+.btn.btn2:hover{
+ transform: scale(1.1);
+ 
+}
+
 
 .contact-right form {
     width: 100%;
