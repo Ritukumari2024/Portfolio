@@ -274,15 +274,22 @@
         }
     </script>
      
-     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzjqg45t8RjE-DWreuJ_OSV-Yguwejc5N5UbmbZ-lvNOG6loRWrxQ0mN77Ao5Em3m0f4g/exec'
+     <!------------Contact form--------------->
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx6uSDnvNTiRVXJCudS3xhwUBHpd_wM0rVruWicKm3k4-UcFyeXXJKqugb9We9O0VF1/exec'
   const form = document.forms['submit-to-google-sheet']
-   const msg = document.getElementById("msg")
+  const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        msg.innerHTML= "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+        }, 1000);
+        form.reset()
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
